@@ -1,0 +1,33 @@
+.nav {
+    background-color: #4caf50;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 800px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 1rem;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
