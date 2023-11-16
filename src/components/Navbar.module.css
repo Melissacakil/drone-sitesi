@@ -1,7 +1,10 @@
 .nav {
-    background-color: #4caf50;
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.877);
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
+
   }
   
   .container {
@@ -15,7 +18,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-left: 800px;
+    margin-left: 500px;
   }
   
   .menu ul {

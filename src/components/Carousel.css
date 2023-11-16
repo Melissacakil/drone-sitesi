@@ -1,0 +1,20 @@
+.resim {
+    display: block;
+    margin: auto;
+    max-width: 50%; /* İstenilen genişliği ayarlayabilirsiniz */
+    max-height: 50vh; /* İstenilen yüksekliği ayarlayabilirsiniz */
+  }
+  
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20%; /* Resimle aynı oranda */
+    height: 20vh; /* Resimle aynı oranda */
+    background-size: contain; /* Orantılı şekilde boyutlandırma */
+    background-position: center; /* Ortala */
+    font-size: 2rem; /* İstenilen yazı boyutu */
+    color: black; /* İstenilen renk */
+  }
+ 
+  
+ 
