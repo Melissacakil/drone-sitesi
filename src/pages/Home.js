@@ -3,6 +3,8 @@ import Slider from "../components/Slider";
 import { Link } from "react-router-dom";
 import VMC from "./inc/Vmc";
 import Service1 from "../imageDrone/img1.jpg";
+import Service2 from "../imageDrone/slider2.jpg";
+import Service3 from "../imageDrone/slider1.jpg";
 
 const Home = () => {
   return (
@@ -36,7 +38,7 @@ const Home = () => {
       {/* Our vision, mission and values */}
       <VMC />
       {/*Our Services  */}
-      <section className="section bg-c-light border-top">
+      <section className="section  border-top">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-4 text-center">
@@ -58,12 +60,55 @@ const Home = () => {
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
+                  <Link to="/services" className="btn btn-link">read more</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 ">
+              <div className="card shadow">
+                <img
+                  src={Service2}
+                  className="w-100 border-bottom"
+                  alt="Services"
+                />
+                <div className="card-body">
+                  <h6>Services 2 </h6>
+                  <div className="underline"></div>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <Link to="/services" className="btn btn-link">read more</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4 ">
+              <div className="card shadow">
+                <img
+                  src={Service3}
+                  className="w-100 border-bottom"
+                  alt="Services"
+                />
+                <div className="card-body">
+                  <h6>Services 3</h6>
+                  <div className="underline"></div>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <Link to="/services" className="btn btn-link">read more</Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
     </div>
   );
 };
