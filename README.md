@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 //npm install
 //npm i react-router-dom
 //npm i bootstrap
+//npm install react-icons

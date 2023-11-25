@@ -5,6 +5,7 @@ import VMC from "./inc/Vmc";
 import Service1 from "../imageDrone/img1.jpg";
 import Service2 from "../imageDrone/slider2.jpg";
 import Service3 from "../imageDrone/slider1.jpg";
+import Counter from "../components/Counter";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
       </section>
       {/* Our vision, mission and values */}
       <VMC />
+      <Counter />
       {/*Our Services  */}
       <section className="section  border-top">
         <div className="container">
@@ -60,7 +62,9 @@ const Home = () => {
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Link to="/services" className="btn btn-link">read more</Link>
+                  <Link to="/services" className="btn btn-link">
+                    read more
+                  </Link>
                 </div>
               </div>
             </div>
@@ -80,7 +84,9 @@ const Home = () => {
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Link to="/services" className="btn btn-link">read more</Link>
+                  <Link to="/services" className="btn btn-link">
+                    read more
+                  </Link>
                 </div>
               </div>
             </div>
@@ -100,15 +106,15 @@ const Home = () => {
                     distracted by the readable content of a page when looking at
                     its layout.
                   </p>
-                  <Link to="/services" className="btn btn-link">read more</Link>
+                  <Link to="/services" className="btn btn-link">
+                    read more
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
     </div>
   );
 };
