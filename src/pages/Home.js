@@ -15,7 +15,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h3 className="main-heading">Our Company</h3>
+              <h3 className="main-heading">Sigma Tarım</h3>
               <div className="underline mx-auto"></div>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,7 +30,7 @@ const Home = () => {
                 Lorem Ipsum.
               </p>
               <Link to="./about" className="btn btn-warning shadow">
-                Read More
+                Daha Fazla
               </Link>
             </div>
           </div>
@@ -38,6 +38,8 @@ const Home = () => {
       </section>
       {/* Our vision, mission and values */}
       <VMC />
+      <br />
+      <br />
       <Counter />
       {/*Our Services  */}
       <section className="section  border-top">

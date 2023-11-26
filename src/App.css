@@ -1,3 +1,22 @@
+/* NAVBAR */
+.navbar {
+  background-color: #ecf0f1;
+}
+.brand,
+.list_item {
+  color: black;
+  margin-right: 5px;
+  text-decoration: none; /* Alt çizgiyi kaldırmak için */
+}
+
+.list_item:hover {
+  color: gray;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+}
+
 p {
   font-size: 14px;
   color: #262626;
@@ -34,11 +53,16 @@ p {
   text-decoration: none !important;
 }
 .customerArea {
-  background-color: green; /* Arka plan rengi */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background: rgb(48, 215, 134);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 215, 134, 1) 0%,
+    rgba(48, 215, 134, 1) 19%,
+    rgba(42, 219, 128, 1) 40%,
+    rgba(73, 196, 199, 1) 64%,
+    rgba(16, 166, 198, 1) 82%,
+    rgba(16, 153, 161, 1) 100%
+  );
 }
 .customerCount {
   font-size: 3rem;
@@ -54,3 +78,5 @@ p {
   font-size: 4rem;
   color: #fff; /* İkon rengi */
 }
+
+/* ABOUT */

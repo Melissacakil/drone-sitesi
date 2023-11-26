@@ -1,7 +1,7 @@
 import React from "react";
 
-const Products = () => {
+const Gallery = () => {
   return <p>ÜRÜNLER KISMI EKLENECEK</p>;
 };
 
-export default Products;
+export default Gallery;

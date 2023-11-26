@@ -7,7 +7,7 @@ function Footer() {
       <div className="container ">
         <div className="row">
           <div className="col-md-4 ">
-            <h6>Company Information</h6>
+            <h6>Şirket Bilgisi</h6>
             <hr />
             <p className="text-white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -15,34 +15,33 @@ function Footer() {
               maiores tempore necessitatibus. Consequatur, labore dolore?
               Doloribus qui iusto consequuntur rerum. Sapiente, ratione nisi!
               Odio possimus similique nam quo ratione voluptatum ipsum
-      
             </p>
           </div>
 
           <div className="col-md-4">
-            <h6>Quick Links</h6>
+            <h6>Hızlı Link</h6>
             <hr />
             <div>
-              <Link to="./">Home </Link> 
+              <Link to="./">Anasayfa </Link>
             </div>
             <div>
-              <Link to="./">About </Link> 
+              <Link to="./">Hakkında </Link>
             </div>
             <div>
-              <Link to="./">Contact </Link> 
+              <Link to="./">Galeri </Link>
             </div>
             <div>
-              <Link to="./">Blog </Link> 
+              <Link to="./">İletişim </Link>
             </div>
           </div>
           <div className="col-md-4">
-            <h6>Contact Information</h6>
+            <h6>İletişim Bilgisi</h6>
             <hr />
-            <div>  
-              <p className="text-white mb-1">#64 Turkey Sariyer</p>
+            <div>
+              <p className="text-white mb-1">#31 Hatay, Türkiye </p>
             </div>
 
-            <div> 
+            <div>
               <p className="text-white mb-1">+90 515 545 54 55</p>
             </div>
 
@@ -50,10 +49,9 @@ function Footer() {
               <p className="text-white mb-1">+90 535 585 45 45</p>
             </div>
 
-            <div>  
+            <div>
               <p className="text-white mb-1">email@gmail.com</p>
             </div>
-
           </div>
         </div>
       </div>

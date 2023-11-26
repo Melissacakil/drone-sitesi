@@ -67,7 +67,6 @@ const Contact = () => {
                 </div>
                 <div className="col-md-6 border-start">
                   <h5 className="main-heading"> Adres Bilgisi</h5>
-                  <div className="underline"></div>
                   <p>xxx, Kırıkhan, Hatay, TÜRKİYE</p>
                   <p> Telefon: +90 535 xxx xx xx</p>
                   <p> Email: email@domain.com</p>
