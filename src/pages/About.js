@@ -1,43 +1,15 @@
 import React from "react";
 import VMC from "./inc/Vmc";
 import Service3 from "../imageDrone/slider1.jpg";
-import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
 
 const About = () => {
   return (
     <div>
-      <section className="py-4 bg-success">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 my-auto">
-              <h4>HAKKIMIZDA</h4>
-            </div>
-            <div className="col-md-4 my-auto">
-              <Link to="/" className="nav-link active text-white">
-                <FaHome /> Anasayfa
-              </Link>
-            </div>
-          </div>
+      <div className=" container aboutSigma">
+        <div className="col-md-12 mb-10 text-center">
+          <p> Geçmişin bilgisiyle, geleceğin tarımında çözüm ortağınız</p>
         </div>
-      </section>
-
-      <section className="section border-bottom ">
-        <div className=" container aboutSigma">
-          <div className="container">
-            <h5 className="main-heading">SİGMA TARIM</h5>
-
-            <p>
-              Toprağın dostu teknolojiyi geçmişten günümüze taşıyor, geleceğin
-              tarımını güvenle şekillendiriyor.
-              <br />
-              <br />
-              Geçmişin bilgisiyle, geleceğin tarımında çözüm ortağınız
-            </p>
-          </div>
-        </div>
-      </section>
-
+      </div>
       <section>
         <div className="container py-4">
           <div className="about-us">
@@ -64,11 +36,19 @@ const About = () => {
                   alt="Services"
                 />
               </div>
+              <section className="section border-bottom "></section>
             </div>
           </div>
         </div>
       </section>
-
+      <div className=" container aboutSigma">
+        <div className="col-md-12 mb-4 text-center">
+          <p>
+            Toprağın dostu teknolojiyi geçmişten günümüze taşıyor, geleceğin
+            tarımını güvenle şekillendiriyor.
+          </p>
+        </div>
+      </div>
       <VMC />
     </div>
   );

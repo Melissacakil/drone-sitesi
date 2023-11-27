@@ -1,6 +1,8 @@
 /* NAVBAR */
 .navbar {
-  background-color: #ecf0f1;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
 }
 .brand,
 .list_item {
@@ -12,6 +14,24 @@
 .list_item:hover {
   color: gray;
 }
+
+
+/*SLİDER*/
+.carousel .carousel-indicators button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.slider-image {
+  object-fit: cover; /* Ya da contain kullanarak farklı bir boyutlandırma seçeneği seçebilirsiniz */
+  height: 90vh; /* Sayfa yüksekliği kadar yaparak ekranın tamamını kullanabilirsiniz */
+  width: 100%;
+}
+/*SLİDER*/
+
+
+
 .btn {
   border: none;
   border-radius: 10px;
@@ -65,7 +85,7 @@ p {
   );
 }
 .customerCount {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fff; /* Sayı rengi */
   margin-top: 10px;
 }

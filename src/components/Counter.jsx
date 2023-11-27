@@ -20,8 +20,9 @@ const Counter = () => {
       <Row>
         <Col className="text-center">
           <FaUsers className="customer-icon" />
-          <p className="customerCount">{customerCount}</p>
           <p className="customerText">Müşteri Sayımız</p>
+          <p className="customerCount">{customerCount}</p>
+        
         </Col>
       </Row>
     </section>

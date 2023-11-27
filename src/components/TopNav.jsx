@@ -23,7 +23,7 @@ const TopNav = () => {
   ];
 
   return (
-    <Navbar className="navbar" expand="lg">
+    <Navbar className="navbar shadow" expand="lg">
       <Container>
         <Navbar.Brand href="/" className="brand">
           <b>SİGMA TARIM</b>
