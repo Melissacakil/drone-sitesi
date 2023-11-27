@@ -1,7 +1,13 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom"; /*react-router-dom'daki NavLink sayfalar arasında geçiş yapmayı sağlar bootstrap sağlamaz*/
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  // faYoutube,
+  faFacebook,
+  // faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 const TopNav = () => {
   const menuData = [
     {
@@ -37,6 +43,22 @@ const TopNav = () => {
               </NavLink>
             ))}
           </Nav>
+
+          <Nav className="socialMedia">
+            <a
+              href="https://www.facebook.com/profile.php?id=100070500115112&mibextid=LQQJ4d"
+              className="facebook social"
+            >
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            </a>
+            <a
+              href="https://instagram.com/sigmatarim?igshid=YTQwZjQ0NmI0OA=="
+              className="facebook social"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+          </Nav>
+
           <Nav className="ms-auto">
             <button className="btn btn-success">Teklif Al</button>
           </Nav>

@@ -22,7 +22,6 @@ const Counter = () => {
           <FaUsers className="customer-icon" />
           <p className="customerText">Müşteri Sayımız</p>
           <p className="customerCount">{customerCount}</p>
-        
         </Col>
       </Row>
     </section>

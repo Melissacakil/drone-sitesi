@@ -1,8 +1,6 @@
 import React from "react";
 import { slider1, slider2, slider3 } from "../imageDrone/ImageDrone";
-import Carousel from 'react-bootstrap/Carousel'
-
-
+import Carousel from "react-bootstrap/Carousel";
 
 function Slider() {
   return (
@@ -14,11 +12,10 @@ function Slider() {
           alt="First slide"
         />
         <Carousel.Caption>
-        <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
-              <h6>Geçmişten Günümüze...</h6>
-              <b/>
-              <b/>
-
+          <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
+          <h6>Geçmişten Günümüze...</h6>
+          <b />
+          <b />
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,8 +25,8 @@ function Slider() {
           alt="Second slide"
         />
         <Carousel.Caption>
-        <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
-              <h6>Geçmişten Günümüze...</h6>
+          <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
+          <h6>Geçmişten Günümüze...</h6>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,8 +36,8 @@ function Slider() {
           alt="Third slide"
         />
         <Carousel.Caption>
-        <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
-              <h6>Geçmişten Günümüze...</h6>
+          <h5>Geleceğin Tarımında Çözüm Ortağınız</h5>
+          <h6>Geçmişten Günümüze...</h6>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

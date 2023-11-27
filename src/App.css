@@ -2,7 +2,6 @@
 .navbar {
   background-color: #f2f2f2;
   margin-bottom: 20px;
-
 }
 .brand,
 .list_item {
@@ -15,9 +14,8 @@
   color: gray;
 }
 
-
 /*SLİDER*/
-.carousel .carousel-indicators button{
+.carousel .carousel-indicators button {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -29,8 +27,6 @@
   width: 100%;
 }
 /*SLİDER*/
-
-
 
 .btn {
   border: none;
