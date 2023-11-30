@@ -1,18 +1,43 @@
 /* NAVBAR */
+.navbar .brand{
+font-size: 25px;
+font-family: 'Roboto Slab', serif;
+}
+
 .navbar {
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
-.brand,
 .list_item {
   color: black;
-  margin-right: 5px;
-  text-decoration: none; /* Alt çizgiyi kaldırmak için */
+  margin-right: 15px;
+  font-family: 'Montez', cursive;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+ 
 }
 
 .list_item:hover {
   color: gray;
 }
+
+
+
+.icon{
+  color: #262626;
+  margin-right: 5px;
+  margin-left: 10p;
+  font-size: small;
+
+}
+
+.icon:hover{
+  color:gray;
+}
+
+/* NAVBAR */
+
+
 
 /* HORİZONTAL CARD */
 
@@ -24,16 +49,23 @@
 
 
 
-.horizontalCard2 {
+.horizontalCard {
   /* border-radius: px; */
   padding:5px;
   object-fit: cover;
+  margin: auto;
+  align-items: center;
+  display: flex;
+
 }
 
 
-.horizontalCard2 img {
+.horizontalCard img {
 object-fit: contain;
+align-items: center;
 }
+
+
 
 /* HORİZONTAL CARD */
 
@@ -46,7 +78,7 @@ object-fit: contain;
 
 .slider-image {
   object-fit: cover; /* Ya da contain kullanarak farklı bir boyutlandırma seçeneği seçebilirsiniz */
-  height: 90vh; /* Sayfa yüksekliği kadar yaparak ekranın tamamını kullanabilirsiniz */
+  height: 60vh; /* Sayfa yüksekliği kadar yaparak ekranın tamamını kullanabilirsiniz */
   width: 100%;
 }
 /*SLİDER*/
@@ -117,3 +149,15 @@ p {
 
 
 /* ABOUT */
+
+
+/* CONTACT*/
+.contactUs{
+  text-align: center;
+  font-size: 20px;
+  padding-top:35px;
+  font-weight: 600;
+  color:rgb(204, 18, 18);
+}
+
+/* CONTACT*/

@@ -3,19 +3,9 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section className="py-4 bg-info">
-        <div className="container">
-          <div className="row">
-            <div className="col-m-4 my-auto">
-              <h4>Bizimle İletişime Geçin</h4>
+            <div className=" container contactUs">
+              BİZE ULAŞIN
             </div>
-            <div className="col-md-8 my-auto">
-              <h6 className="float-end">Anasayfa / İletişim</h6>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <div className="card shadow">

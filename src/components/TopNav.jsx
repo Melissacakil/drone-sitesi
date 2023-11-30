@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom"; /*react-router-dom'daki NavLink sayfalar arasında geçiş yapmayı sağlar bootstrap sağlamaz*/
+// import { NavLink } from "react-router-dom"; /*react-router-dom'daki NavLink sayfalar arasında geçiş yapmayı sağlar bootstrap sağlamaz*/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   // faYoutube,
@@ -38,30 +38,34 @@ const TopNav = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {menuData.map((item) => (
-              <NavLink to={item.path} key={item.name}>
+              <a className="list_item" href={item.path} key={item.name}>
                 <div className="list_item"> {item.name}</div>
-              </NavLink>
+              </a>
             ))}
           </Nav>
-
           <Nav className="socialMedia">
             <a
               href="https://www.facebook.com/profile.php?id=100070500115112&mibextid=LQQJ4d"
-              className="facebook social"
+              className="facebookSocial"
             >
+
+              <div className="icon">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </div>
             </a>
             <a
               href="https://instagram.com/sigmatarim?igshid=YTQwZjQ0NmI0OA=="
-              className="facebook social"
+              className="instagramSocial"
             >
+               <div className="icon">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </div>
             </a>
           </Nav>
-
           <Nav className="ms-auto">
             <button className="btn btn-success">Teklif Al</button>
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
