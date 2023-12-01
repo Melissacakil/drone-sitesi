@@ -4,8 +4,6 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import WhatsappButton from "../components/Whatsapp";
-import handleWhatsappClick from "../components/Whatsapp";
 
 const TopNav = () => {
   const menuData = [
@@ -67,7 +65,7 @@ const TopNav = () => {
                 </div>
               </a>
             </Nav>
-            <WhatsappButton />
+            <button className="btn btn-success">Teklif Al</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
