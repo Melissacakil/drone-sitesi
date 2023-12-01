@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function Slider() {
   return (
-    <Carousel data-bs-theme="light">
+    <Carousel className="sliderDesign" data-bs-theme="light">
       <Carousel.Item>
         <img
           className="d-block w-100 slider-image"

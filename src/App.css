@@ -1,43 +1,76 @@
-/* NAVBAR */
+/***** NAVBAR*****/
+
 .navbar {
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  position: fixed !important;
+  z-index: 2000 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-.brand,
+.navbar .brand {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+}
+
 .list_item {
   color: black;
-  margin-right: 5px;
-  text-decoration: none; /* Alt çizgiyi kaldırmak için */
+  margin-right: 15px;
+  font-family: "Montez", cursive;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 .list_item:hover {
   color: gray;
 }
 
-/* HORİZONTAL CARD */
+.icon {
+  color: #262626;
+  margin-right: 5px;
+  margin-left: 10p;
+  font-size: small;
+}
 
-.card{
+.icon:hover {
+  color: gray;
+}
+
+.navbar .btn-success {
+  margin-left: 5px;
+}
+
+/***** NAVBAR*****/
+
+/***** HORİZONTAL CARD *****/
+
+.card {
   margin-top: 30px;
   margin-bottom: 30px;
   border-style: none;
 }
 
-
-
-.horizontalCard2 {
+.horizontalCard {
   /* border-radius: px; */
-  padding:5px;
+  padding: 5px;
   object-fit: cover;
+  margin: auto;
+  align-items: center;
+  display: flex;
 }
 
-
-.horizontalCard2 img {
-object-fit: contain;
+.horizontalCard img {
+  object-fit: contain;
+  align-items: center;
 }
 
 /* HORİZONTAL CARD */
 
 /*SLİDER*/
+.sliderDesign {
+  margin-top: 90px;
+}
+
 .carousel .carousel-indicators button {
   width: 15px;
   height: 15px;
@@ -46,7 +79,7 @@ object-fit: contain;
 
 .slider-image {
   object-fit: cover; /* Ya da contain kullanarak farklı bir boyutlandırma seçeneği seçebilirsiniz */
-  height: 90vh; /* Sayfa yüksekliği kadar yaparak ekranın tamamını kullanabilirsiniz */
+  height: 60vh; /* Sayfa yüksekliği kadar yaparak ekranın tamamını kullanabilirsiniz */
   width: 100%;
 }
 /*SLİDER*/
@@ -92,6 +125,19 @@ p {
   text-decoration: none !important;
 }
 
+/*DATE*/
+
+.today p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(174, 43, 43);
+  font-weight: 600;
+
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+}
+
+/*DATE*/
 
 /* COUNTER */
 
@@ -105,15 +151,37 @@ p {
 }
 .customerText {
   font-size: 1.5rem;
-  color:black;
+  color: black;
   margin-top: -10px;
 }
 .customer-icon {
   font-size: 4rem;
-  color: black /* İkon rengi */
+  color: black; /* İkon rengi */
 }
 
 /* COUNTER */
 
-
 /* ABOUT */
+.aboutSigma {
+  margin-top: 150px; /* Navbar ve about kısmı arasındaki mesafe */
+}
+/* CONTACT*/
+.phoneIcon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.contactUs {
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 35px;
+  font-weight: 600;
+  color: rgb(204, 18, 18);
+  margin-top: 60px;
+}
+
+/* CONTACT*/

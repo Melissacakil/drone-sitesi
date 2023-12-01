@@ -1,21 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
     <div>
-      <section className="py-4 bg-info">
-        <div className="container">
-          <div className="row">
-            <div className="col-m-4 my-auto">
-              <h4>Bizimle İletişime Geçin</h4>
-            </div>
-            <div className="col-md-8 my-auto">
-              <h6 className="float-end">Anasayfa / İletişim</h6>
-            </div>
+      <div className=" container contactUs">BİZE ULAŞIN</div>
+      <div className="socialMedia">
+        <div className=" container phoneIcon">
+          <FontAwesomeIcon icon={faPhone} size="2x" />
+          <div className="phoneNumber">
+            <b>+90535 535 35 35</b>
           </div>
         </div>
-      </section>
-
+      </div>
       <section className="section">
         <div className="container">
           <div className="card shadow">

@@ -2,7 +2,7 @@ import React from "react";
 
 function VMC() {
   return (
-    <section className="section bg-c-light border-top">
+    <section className="section bg-c-light shadow border-top">
       <div className="container">
         <div className="row">
           <div className="col-md-12 mb-4 text-center">

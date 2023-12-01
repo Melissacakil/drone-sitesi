@@ -6,9 +6,11 @@ import Service1 from "../imageDrone/img1.jpg";
 import Service2 from "../imageDrone/slider2.jpg";
 import Service3 from "../imageDrone/slider1.jpg";
 // import card1 from "../imageDrone/card1.jpg";
-import card2 from "../imageDrone/card2.jpg";
+// import card2 from "../imageDrone/card2.jpg";
 // import card3 from "../imageDrone/card3.jpg"
 import Counter from "../components/Counter";
+import Today from "../components/Date";
+// import { Card } from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <h3 className="main-heading">Sigma Tarım</h3>
+              <h5>Geçmişin bilgisiyle, geleceğin tarımında çözüm ortağınız</h5>
               <div className="underline mx-auto"></div>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -43,37 +46,15 @@ const Home = () => {
       <VMC />
       <br />
       <br />
-      <Counter />
+      <div className="container">
+        <Today />
+        <Counter />
+      </div>
+
       {/*Our Services  */}
 
       {/* HORIZONTAL CARD YAPISI */}
-      <div className="container ">
 
-      <div className="card2 shadow">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-7">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src={card2} class="horizontalCard2" alt="Service1" />
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
       {/* HORIZONTAL CARD YAPISI */}
 
       {/* ÜÇLÜ CARD YAPISI */}

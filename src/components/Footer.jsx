@@ -22,16 +22,16 @@ function Footer() {
             <h6>Hızlı Link</h6>
             <hr />
             <div>
-              <Link to="./">Anasayfa </Link>
+              <Link to="/">Anasayfa </Link>
             </div>
             <div>
-              <Link to="./">Hakkında </Link>
+              <Link to="/about">Hakkında </Link>
             </div>
             <div>
-              <Link to="./">Galeri </Link>
+              <Link to="/gallery">Galeri </Link>
             </div>
             <div>
-              <Link to="./">İletişim </Link>
+              <Link to="/contact">İletişim </Link>
             </div>
           </div>
           <div className="col-md-4">
