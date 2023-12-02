@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <div className=" container aboutSigma">
         <div className="col-md-12 mb-10 text-center">
-          <p> Geçmişin bilgisiyle, geleceğin tarımında çözüm ortağınız</p>
+          <h5> Geçmişin bilgisiyle, geleceğin tarımında çözüm ortağınız</h5>
         </div>
       </div>
       <section>

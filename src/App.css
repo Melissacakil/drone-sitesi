@@ -1,10 +1,4 @@
 /***** NAVBAR*****/
-
-/* NAVBAR */
-.navbar .brand {
-  font-size: 25px;
-  font-family: "Roboto Slab", serif;
-}
 .navbar {
   background-color: #f2f2f2;
   position: fixed !important;
@@ -24,14 +18,8 @@
   font-family: "Montez", cursive;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-}
-
-.list_item {
-  color: black;
-  margin-right: 15px;
-  font-family: "Montez", cursive;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
+  text-align: center;
+  justify-content: center;
 }
 
 .list_item:hover {
@@ -40,13 +28,17 @@
 
 .icon {
   color: #262626;
-  margin-right: 5px;
+  margin-right: 10px;
   margin-left: 10p;
   font-size: small;
 }
 
 .icon:hover {
   color: gray;
+}
+
+.socialMedia {
+  margin-right: 60px;
 }
 
 /* NAVBAR */
