@@ -80,3 +80,16 @@ npm install react-bootstrap bootstrap
 //npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome {sosyal medya ikonları için}
 //npm install --save react-bootstrap-icons
 //npm install --save-dev webpack webpack-cli  (BU PAKETİN YÜKLÜ OLMASI ÖNEMLİ İKONLARDA SIKINTI ÇIKIYOR)
+
+
+BABEL PAKETLERİ GÜNCELLEME
+
+npm install @babel/cli @babel/core --save-dev
+npm install --save-dev @babel/preset-env
+npm install --save-dev @babel/preset-react
+
+package.jsona eklenir
+ "scripts": {
+    "webpack-dev":"webpack --mode development",
+    "webpack-build":"webpack --mode production",
+    }
