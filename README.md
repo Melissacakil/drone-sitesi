@@ -93,3 +93,6 @@ package.jsona eklenir
     "webpack-dev":"webpack --mode development",
     "webpack-build":"webpack --mode production",
     }
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+ npm i react-image-gallery

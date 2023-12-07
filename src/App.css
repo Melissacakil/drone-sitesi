@@ -133,6 +133,12 @@ p {
   background-color: #f2f2f2;
 }
 
+
+.footer{
+  bottom: 0;
+  left: 0;
+}
+
 .footer a {
   color: #fff;
   text-decoration: none !important;
@@ -215,3 +221,29 @@ p {
 }
 
 /* CONTACT*/
+
+
+/*GALLERY*/
+.myGallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+ 
+}
+.myGallery h1{
+  margin-top: 80px;
+}
+.myGallery h2{
+  margin-bottom: 30px;
+}
+
+.buttonMyGalley{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+/*GALLERY*/
