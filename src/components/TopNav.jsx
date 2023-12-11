@@ -1,9 +1,10 @@
-import React from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Navbar, Nav, Modal } from "react-bootstrap";
 // import { NavLink } from "react-router-dom"; /*react-router-dom'daki NavLink sayfalar arasında geçiş yapmayı sağlar bootstrap sağlamaz*/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import Whatsapp from "./Whatsapp";
 
 const TopNav = () => {
   const menuData = [
@@ -24,6 +25,15 @@ const TopNav = () => {
       name: "İletişim",
     },
   ];
+  const [showModal, setshowModal] = useState(false);
+
+  const handleButtonClick = () => {
+    setshowModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setshowModal(false);
+  }
 
   return (
     <Navbar className="navbar shadow mb-20" expand="lg">
@@ -65,7 +75,22 @@ const TopNav = () => {
                 </div>
               </a>
             </Nav>
-            <button className="btn btn-success">Teklif Al</button>
+            <button onClick={handleButtonClick} className="btn btn-success">
+            <FontAwesomeIcon icon={faWhatsapp} size="1x " />  Teklif Al
+            </button>
+            <Modal  className="modalContainer" show={showModal} onHide={handleCloseModal}>
+              <Modal.Header closeButton>
+                <Modal.Title className="modalTitle">Whatsapp hattımız üzerinden bilgi almak için tıklayınız</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <Whatsapp />
+              </Modal.Body>
+              <Modal.Footer>
+                <button className="btn btn-dark" onClick={handleCloseModal}>
+                  Kapat
+                </button>
+              </Modal.Footer>
+            </Modal>
           </Nav>
         </Navbar.Collapse>
       </Container>

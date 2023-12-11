@@ -41,10 +41,6 @@
   margin-right: 60px;
 }
 
-/* NAVBAR */
-
-/* HORİZONTAL CARD */
-
 .icon:hover {
   color: gray;
 }
@@ -53,9 +49,21 @@
   margin-left: 5px;
 }
 
+.modalContainer{
+  position: fixed;
+  margin-top: 60px;
+  font-size: 25px;
+  font-weight: 100;
+  z-index:1050
+}
+
+.reactWhatsapp{
+  display: none;
+}
+
+
 /***** NAVBAR*****/
 
-/***** HORİZONTAL CARD *****/
 
 .card {
   margin-top: 30px;
