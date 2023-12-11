@@ -2,7 +2,7 @@
 import React from "react";
 import ImageGallery from "react-image-gallery"
 import "react-image-gallery/styles/css/image-gallery.css"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 
 const Gallery= ()=>{
@@ -22,11 +22,17 @@ const images = [
   },
 ];
 
-const slideshowref =useRef()
+const slideShowRef =useRef()
+const [isPlaying, setIsPlaying] = useState(false);
 
-function playSlides(){
-  slideshowref.current.play()
+function playSlides() {
+  if (isPlaying) {
+    slideShowRef.current.pause();
+  } else {
+    slideShowRef.current.play();
+  }
 
+  setIsPlaying(!isPlaying);
 }
 
 return(
@@ -34,18 +40,21 @@ return(
   <h1>hello CodeSandBox</h1>
   <h2>Start editing to see some magic happen!</h2>
   <ImageGallery 
-  ref={slideshowref}
+    ref={slideShowRef}
     items={images}
     showPlayButton={true}
     showFullscreenButton={true}
-    slideInterval={1000}
+    slideInterval={3000}
     slideOnThumbnailOver={true}
     showIndex={true}
-    onPlay={() => {
-      alert("slideshow is now playing!");
-    }}/>
-    <button className=" btn btn-success buttonMyGalley"  onClick={playSlides}>Play</button>
-</div>
+    />
+    <button
+        className="btn btn-success buttonMyGallery"
+        onClick={playSlides}
+      >
+        {isPlaying ? "Durdur" : "Oynat"}
+      </button>
+    </div>
 )
 }
 
