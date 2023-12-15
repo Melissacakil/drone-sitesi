@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Container, Navbar, Nav, Modal } from "react-bootstrap";
 // import { NavLink } from "react-router-dom"; /*react-router-dom'daki NavLink sayfalar arasında geçiş yapmayı sağlar bootstrap sağlamaz*/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Whatsapp from "./Whatsapp";
 
 const TopNav = () => {
   const menuData = [
@@ -25,14 +28,22 @@ const TopNav = () => {
       name: "İletişim",
     },
   ];
-  const [showModal, setshowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleButtonClick = () => {
-    setshowModal(true);
+    setShowModal(true);
   }
 
   const handleCloseModal = () => {
-    setshowModal(false);
+    setShowModal(false);
+  }
+
+  const openWhatsAppWeb = () => {
+    // Burada telefon numaranızı ve istediğiniz mesajı kullanarak WhatsApp Web sayfasına yönlendirme yapabilirsiniz.
+    const whatsappNumber = "+905354512967"; // Telefon numaranızı güncelleyin
+    const message = "Merhaba! Teklif almak istiyorum.";
+
+    window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   }
 
   return (
@@ -57,7 +68,6 @@ const TopNav = () => {
                   <FontAwesomeIcon icon={faPhone} size="2x" />
                 </div>
               </a>
-
               <a
                 href="https://www.facebook.com/profile.php?id=100070500115112&mibextid=LQQJ4d"
                 className="facebookSocial"
@@ -75,22 +85,29 @@ const TopNav = () => {
                 </div>
               </a>
             </Nav>
-            <button onClick={handleButtonClick} className="btn btn-success">
-            <FontAwesomeIcon icon={faWhatsapp} size="1x " />  Teklif Al
-            </button>
-            <Modal  className="modalContainer" show={showModal} onHide={handleCloseModal}>
-              <Modal.Header closeButton>
-                <Modal.Title className="modalTitle">Whatsapp hattımız üzerinden bilgi almak için tıklayınız</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <Whatsapp />
-              </Modal.Body>
-              <Modal.Footer>
-                <button className="btn btn-dark" onClick={handleCloseModal}>
-                  Kapat
-                </button>
-              </Modal.Footer>
-            </Modal>
+        
+
+          <Nav className="ms-auto">
+          <a href="#" className="btn btn-success" onClick={handleButtonClick}>
+            <FontAwesomeIcon icon={faWhatsapp} size="1x" /> Teklif Al
+          </a>
+          <Modal className="modalContainer" show={showModal} onHide={handleCloseModal}>
+            <Modal.Header closeButton>
+              <Modal.Title className="modalTitle">WhatsApp ile İletişim</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <p>WhatsApp ile iletişim hattına ulaşmak için aşağıdaki bağlantıya tıklayınız:</p>
+              <a href="#" onClick={openWhatsAppWeb}>
+                Whatsapp Web için Tıklayınız
+              </a>
+            </Modal.Body>
+            <Modal.Footer>
+              <button className="btn btn-dark" onClick={handleCloseModal}>
+                Kapat
+              </button>
+            </Modal.Footer>
+          </Modal>
+        </Nav>
           </Nav>
         </Navbar.Collapse>
       </Container>
