@@ -12,9 +12,10 @@
   font-family: "Roboto Slab", serif;
 }
 
+
 .list_item {
   color: black;
-  margin-right: 15px;
+  margin-left: 15px;
   font-family: "Montez", cursive;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -60,6 +61,11 @@
 .reactWhatsapp{
   display: none;
 }
+
+.modalContainer a{
+  text-decoration: none;
+}
+
 
 
 /***** NAVBAR*****/
